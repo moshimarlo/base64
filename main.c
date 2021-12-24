@@ -4,7 +4,8 @@
 int run_tests(void)
 {
 	int success = 0;
-	success = test_chunk_to_24bs();
+	success += test_chars_to_4base();
+	success += test_hex_to_base();
 	return success;
 }
 
